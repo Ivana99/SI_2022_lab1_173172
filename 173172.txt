@@ -1,0 +1,272 @@
+$ git config --global user.name "Ivana99"
+$ git config --global user.email ivanaaa99.is@gmail.com
+
+1. Klonirame repository
+$ git clone https://github.com/Ivana99/SI_2022_lab1_173172.git
+
+2. Vleguvame vo lokalen repository
+$ cd SI_2022_lab1_173172
+
+3. Inicijalizirame
+$ git init
+
+4. Kreirame shopping list txt file 
+$ touch shopping_list.txt
+
+5. Go popolnuvame fajlot
+$ nano shopping_list.txt
+   
+   Go dodavame
+$ git add shopping_list.txt
+   
+   Pravime commit
+$ git commit -m "Add 5 items to do shopping list"
+$ git push
+
+6. Dodavame quantity vo fajlot 
+$ nano shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Add quantities to the items"
+$ git push
+
+7. Kreirame branchovi 
+$ git checkout -b branch1
+$ git checkout main
+$ git checkout -b branch2
+$ git checkout main
+$ git log
+
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:58:28 2022 +0200
+
+    Add quantities to the items
+
+commit b95faa121474dcccfe5decbb4949d408e79bc277
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:53:37 2022 +0200
+
+    Add 5 items to do shopping list
+
+commit b19f70fa80da91571ad53e778d95c5ce94d014c9
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:47:26 2022 +0200
+
+    Update README.md
+
+commit c01d2ff7d1ba33c6f0a682b7837490a82bf9a493
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:46:50 2022 +0200
+
+    Initial commit
+
+9. Sihroniziranje
+
+$ git push
+
+10. Prefrlanje na granka 1
+
+$ git checkout branch1
+
+11. Menuvanje na kolicina na #5
+
+$ nano shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Change quantitie of item #5"
+$ git push
+
+12. Vrakjanje na main
+
+$ git checkout main
+
+13. Menuvanje na kolicinata na #2
+
+$ nano shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Change quantity of item #2"
+
+14. Sihronizacija
+
+$ git push
+
+15. Prefrluvanje na branch2
+
+$ git checkout branch2
+
+16. Menuvanje na stavka 4
+
+$ nano shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Modify item #4"
+$ git push
+
+17. Dosegashni logovi
+
+$ git log
+commit 332000731acf3f096fb09dc9d36b09b58f4a1cf1 (HEAD -> branch1)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 19:01:47 2022 +0200
+
+    Change quantitie of item #5
+
+commit 9fd3c96fdc66f4f49d248ef1fd21524b01628e1f (origin/main, main, branch2)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:58:28 2022 +0200
+
+    Add quantities to the items
+
+commit b95faa121474dcccfe5decbb4949d408e79bc277
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:53:37 2022 +0200
+
+    Add 5 items to do shopping list
+
+commit b19f70fa80da91571ad53e778d95c5ce94d014c9
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:47:26 2022 +0200
+
+    Update README.md
+
+commit c01d2ff7d1ba33c6f0a682b7837490a82bf9a493
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:46:50 2022 +0200
+
+    Initial commit
+
+
+$ git log
+commit aadd88254c47bbbf42f1822511536cb980fefd42 (HEAD -> main, origin/main)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 19:03:42 2022 +0200
+
+    Change quantity of item #2
+
+commit 9fd3c96fdc66f4f49d248ef1fd21524b01628e1f (branch2)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:58:28 2022 +0200
+
+    Add quantities to the items
+
+commit b95faa121474dcccfe5decbb4949d408e79bc277
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:53:37 2022 +0200
+
+    Add 5 items to do shopping list
+
+commit b19f70fa80da91571ad53e778d95c5ce94d014c9
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:47:26 2022 +0200
+
+    Update README.md
+
+commit c01d2ff7d1ba33c6f0a682b7837490a82bf9a493
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:46:50 2022 +0200
+
+    Initial commit
+
+$ git log
+commit 1937abe36d8e58434f6b9969612b5d9bda1beb27 (HEAD -> branch2)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 19:05:24 2022 +0200
+
+    Modify item #4
+
+commit 9fd3c96fdc66f4f49d248ef1fd21524b01628e1f
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:58:28 2022 +0200
+
+    Add quantities to the items
+
+commit b95faa121474dcccfe5decbb4949d408e79bc277
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:53:37 2022 +0200
+
+    Add 5 items to do shopping list
+
+commit b19f70fa80da91571ad53e778d95c5ce94d014c9
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:47:26 2022 +0200
+
+    Update README.md
+
+commit c01d2ff7d1ba33c6f0a682b7837490a82bf9a493
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:46:50 2022 +0200
+
+    Initial commit
+
+
+18. Dodavanje 6 stavka 
+
+$ nano shopping_list.txt
+$ git add shopping_list.txt
+$ git commit -m "Modify number #4 and add item #6"
+$ git push
+
+19. Dosegasni logovi
+
+$ git log
+commit 62c760777355c1ccc68614b47a965b2368f37ee6 (HEAD -> branch2)
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 19:07:52 2022 +0200
+
+    Modify number #4 and add item #6
+
+commit 1937abe36d8e58434f6b9969612b5d9bda1beb27
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 19:05:24 2022 +0200
+
+    Modify item #4
+
+commit 9fd3c96fdc66f4f49d248ef1fd21524b01628e1f
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:58:28 2022 +0200
+
+    Add quantities to the items
+
+commit b95faa121474dcccfe5decbb4949d408e79bc277
+Author: Ivana99 <ivanaaa99.is@gmail.com>
+Date:   Sun Apr 10 18:53:37 2022 +0200
+
+    Add 5 items to do shopping list
+
+commit b19f70fa80da91571ad53e778d95c5ce94d014c9
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:47:26 2022 +0200
+
+    Update README.md
+
+commit c01d2ff7d1ba33c6f0a682b7837490a82bf9a493
+Author: Ivana99 <49729430+Ivana99@users.noreply.github.com>
+Date:   Sun Apr 10 18:46:50 2022 +0200
+
+    Initial commit
+
+20. Prefrlanje na master 
+
+$ git checkout master
+
+21. Spojuvanje na branch1 so master 
+
+$ git merge branch1
+
+22. Spojuvanje na branch2 so master
+
+$ git merge branch2
+
+23. Dodavanje na ovoj txt 
+
+$ touch 173172.txt
+$ nano 173172.txt
+$ add 173172.txt
+$ git commit -m "Add docs"
+
+
+24. Sihronizacjia
+$ git push
+
+EXIT
+
+
+
+ 
