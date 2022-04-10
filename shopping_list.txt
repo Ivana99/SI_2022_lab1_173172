@@ -3,6 +3,8 @@ milk  2
 eggs  10
 pancakes 3
 caffee 5
+ice cream 8
+
 
 
 
