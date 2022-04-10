@@ -1,0 +1,6 @@
+bread
+milk
+eggs
+chocolate
+caffee
+
